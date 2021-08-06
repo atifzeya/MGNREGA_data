@@ -15,7 +15,7 @@ remDr$screenshot(display = TRUE)
 
 ####### Enter the correct CAPTCHA required at <here> as you see in the screenshot #######
 captcha <- remDr$findElement(using = 'id', "ContentPlaceHolder1_txtCaptcha")
-captcha$sendKeysToElement(list("32"))
+captcha$sendKeysToElement(list("32"))    #fill the number as per the screenshot
 
 verifycode <- remDr$findElement(using = 'id', "ContentPlaceHolder1_btnLogin")
 verifycode$clickElement()
