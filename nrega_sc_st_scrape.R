@@ -9,7 +9,7 @@ library(wdman)
 ####### Running a firefox session #########
 driver<- rsDriver(port=4444L,browser=c("firefox"))
 remDr <- driver[["client"]]
-remDr$navigate("http://mnregaweb4.nic.in/netnrega/MISreport4.aspx") #Running the website
+remDr$navigate("http://mnregaweb4.nic.in/netnrega/MISreport4.aspx") #navigating to the website
 remDr$screenshot(display = TRUE)
 
 ####### Enter the correct CAPTCHA required at <here> as you see in the screenshot #######
